@@ -1,0 +1,99 @@
+<html>
+    <head></head>
+    <style>
+      /* CSS styles can go here */
+      
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+      }
+      header {
+          background-color: #333;
+          color: #ffffff;
+          padding: 10px;
+          text-align: center;
+      }
+      nav {
+          background-color: #f4f4f4;
+          padding: 10px;
+      }
+      nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+      }
+      nav ul li {
+          display: inline;
+          margin-right: 20px;
+      }
+      nav ul li a {
+          text-decoration: none;
+          color: #333;
+          padding: 5px 10px;
+          border-radius: 5px;
+      }
+      nav ul li a:hover {
+          background-color: #ddd;
+      }
+      .wrapper .btn{
+      width: 20%;
+      height: 20px;
+      background: #ffffff;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+      section {
+          font-family: Arial, sans-serif;
+          font-size: xx-large;
+          color: #ffffffce;
+          background: url(Home.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
+          padding: 70px;
+      }
+      .scroll-bar{
+              height: 100%;
+              width: 1517px;
+              border: 1px solid grey;
+              font-family: 'GestaRegular', Arial, Helvetica, sans-serif;
+          }
+  </style>
+    <body>
+      <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+      <div class="tradingview-widget-container" style="height:100%;width:100%">
+        <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        ({
+        "autosize": true,
+        "symbol": "NASDAQ:NVDA",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "en",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "calendar": false,
+        "support_host": "https://www.tradingview.com"
+      });
+        </script>
+      </div>
+    </body>
+</html>
